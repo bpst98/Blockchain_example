@@ -13,3 +13,23 @@ class Transaction{
     }
     
 }
+class Block {
+    var index : Int = 0
+    var PrevHash : String = ""
+    var hash : String = ""
+    var Nonce :Int
+    
+    private (set) var Transactions : [Transaction] = [Transaction]()
+    
+    
+    init() {
+        self.Nonce = 0
+        
+    }
+}
+
+class BlockChain{
+    private (set) var Blocks : [Block]=[Block]()
+    
+    
+}
